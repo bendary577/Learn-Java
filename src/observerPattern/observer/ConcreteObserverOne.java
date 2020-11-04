@@ -9,6 +9,7 @@ public class ConcreteObserverOne  implements Observer{
 
     public ConcreteObserverOne(){}
 
+    @Override
     public State getData() {
         return data;
     }

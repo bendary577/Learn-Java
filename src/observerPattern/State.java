@@ -2,7 +2,7 @@ package observerPattern;
 
 public class State {
 
-    private String dataValue;
+    private String dataValue = "";
 
     public String getDataValue() {
         return dataValue;

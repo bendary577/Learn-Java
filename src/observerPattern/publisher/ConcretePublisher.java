@@ -27,16 +27,14 @@ public class ConcretePublisher implements Publisher {
     }
 
     @Override
-    public void removeObserver(Observer observer) {
+    public boolean removeObserver(Observer observer) {
         if(observer instanceof ConcreteObserverOne){
             System.out.println("removing observer one ....");
         }else{
             System.out.println("removing observer two ...");
         }
-        int index = observers.indexOf(observer);
-        if (index > 0) {
-            observers.remove(observer);
-        }
+        boolean deleted = observers.indexOf(observer) > 0 ? observers.remove(observer) : false ;
+        return deleted;
     }
 
     @Override
