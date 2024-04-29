@@ -2,7 +2,6 @@ package multithreading;
 
 import multithreading.synchronization.ConsumerThread;
 import multithreading.synchronization.ProducerThread;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +11,8 @@ public class MultiThreadingMain {
     public static List<Integer> bucket = new ArrayList<>();
 
     public static void main(String[] args){
+
+        /* synchronization : producer consumer */
         ProducerThread p1 = new ProducerThread("p1");
         ProducerThread p2 = new ProducerThread("p2");
 
