@@ -1,0 +1,6 @@
+principles :
+1 - program defensively : understand what could someone deliberately/unintentionally do to compromise your software
+2 - understand the environment where your software will be used
+3 - the best program if configured incorrectly, will not cause problems
+4 - if program is not robust, it won't be secure.
+

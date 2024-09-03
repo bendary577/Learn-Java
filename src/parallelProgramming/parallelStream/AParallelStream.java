@@ -5,7 +5,7 @@ import java.util.OptionalDouble;
 
 public class AParallelStream {
 
-    private class Student {
+    private static class Student {
         String name;
         int age;
 
@@ -30,7 +30,7 @@ public class AParallelStream {
             this.age = age;
         }
     }
-    private LinkedList<Student> students;
+    private final LinkedList<Student> students;
 
     public AParallelStream(){
         students = new LinkedList<>();
